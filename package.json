@@ -1,6 +1,6 @@
 {
   "name": "@dailycare-au/nuxt-intercom",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Intercom Module for Nuxt.js",
   "repository": "dailycare-au/nuxt-intercom",
   "license": "MIT",
