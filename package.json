@@ -1,12 +1,15 @@
 {
-  "name": "@hexdigital/nuxt-intercom",
+  "name": "@dailycare-au/nuxt-intercom",
   "version": "0.0.10",
   "description": "Intercom Module for Nuxt.js",
-  "repository": "hex-digital/nuxt-intercom",
+  "repository": "dailycare-au/nuxt-intercom",
   "license": "MIT",
   "contributors": [
     {
       "name": "Jamie Warburton <jamie@hexdigital.com>"
+    },
+    {
+      "name": "Sean St. Quentin <sean.stquentin@dailycare.com.au>"
     }
   ],
   "files": [
