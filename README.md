@@ -1,5 +1,9 @@
 # nuxt-intercom
 
+**FORK DETAILS** - Forked from 0.0.10, primary change is allowing the use of Nuxt's runtime config options for the intercom API key.
+
+---
+
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Circle CI][circle-ci-src]][circle-ci-href]
@@ -14,22 +18,27 @@
 
 ## Setup
 
-1. Add `@hexdigital/nuxt-intercom` dependency to your project
+1. Add `@dailycare-au/nuxt-intercom` dependency to your project
 
 ```bash
-yarn add @hexdigital/nuxt-intercom # or npm install @hexdigital/nuxt-intercom
+yarn add @dailycare-au/nuxt-intercom # or npm install @dailycare-au/nuxt-intercom
 ```
 
-Add `@hexdigital/nuxt-intercom` to the buildModules section of nuxt.config.js
+Add `@dailycare-au/nuxt-intercom` to the buildModules section of nuxt.config.js
 
 ```js
 {
   buildModules: [
-    '@hexdigital/nuxt-intercom',
+    '@dailycare-au/nuxt-intercom',
   ],
-  intercom: {
-    appId: 'XXXXXXXXXX',
+  publicRuntimeConfig: {
+    intercom: {
+      appId: process.env.INTERCOM_KEY
+    }
   },
+  intercom: {
+    // other options
+  }
 }
 ```
 
